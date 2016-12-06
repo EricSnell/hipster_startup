@@ -4,6 +4,10 @@ body,
   height: 100%;
 }
 
+nav.navbar-inverse {
+  background: rgba(0, 0, 0, 0.5);
+}
+
 .cover {
   background: url("img/couchfriends.jpg") top left no-repeat;
   background-size: cover;

@@ -90,3 +90,18 @@ footer {
 footer a {
   color: hotpink;
 }
+
+
+/* Media Query for Mobile Devices */
+
+@media only screen and ( max-width: 568px ) {
+
+  .cover h1 {
+    font-size: 40px;
+  }
+
+  section {
+    padding: 10px;
+  }
+
+}

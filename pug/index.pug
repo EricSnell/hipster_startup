@@ -16,10 +16,34 @@ html(lang="en")
     )
 
     // Less Stylesheet & CDN
-    link(rel="stylesheet", type="text/css", href="styles.less")
+    link(rel="stylesheet", type="text/css", href="less/styles.less")
     script(src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.1/less.min.js")
 
+
+
   body
+
+    // Navbar
+    nav.navbar.navbar-fixed-top.navbar-default
+      div.container
+        div.navbar-header
+          button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#navbar-collapse")
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href="index.html") Hipstrify.io
+
+        div.collapse.navbar-collapse#navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li: a.active(href="#home") Home
+            li: a(href="#why-us") About
+            li: a(href="#team") Our team
+            li: a(href="contact") Contact
+    // Navbar end
+
+
+
 
 
     // jQuery (necessary for Bootstrap's JavaScript plugins)

@@ -24,7 +24,7 @@ html(lang="en")
   body
 
     // Navbar
-    nav.navbar.navbar-fixed-top.navbar-default
+    nav.navbar.navbar-fixed-top.navbar-default.navbar-inverse
       div.container
         div.navbar-header
           button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#navbar-collapse")
@@ -95,17 +95,42 @@ html(lang="en")
     // Wny Us end
 
 
+    // Team
+    section#team
+      div.container
+        h2 Meet Our Team
+        div.row
+          div.col-sm-3
+            img.img-circle(src="../img/jane.jpg", alt="Woman's face")
+            h4 Jane Doe
+            p Swag blue bottle disrupt vice aesthetic chia.
+          div.col-sm-3
+            img.img-circle(src="../img/john.jpg", alt="Man's face")
+            h4 Jane Doe
+            p Swag blue bottle disrupt vice aesthetic chia.
+          div.col-sm-3
+            img.img-circle(src="../img/jenny.jpg", alt="Woman's face")
+            h4 Jane Doe
+            p Swag blue bottle disrupt vice aesthetic chia.
+          div.col-sm-3
+            img.img-circle(src="../img/jim.jpg", alt="Man's face")
+            h4 Jane Doe
+            p Swag blue bottle disrupt vice aesthetic chia.
+    // Team end
+          
+
     // Sign Up
-    div.container
-      h2 Get Our Handcrafted Newsletter
-      p.lead Seariously, we'll send you real paper in the mail. We don't do email.
-      div.row
-        div.col-sm-8.col-sm-offset-2
-          form
-            div.input-group
-              input.form-control.input-lg(type="text", placeholder="Put your real address in here...")
-              span.input-group-btn
-                button.btn.btn-warning.btn-lg(type="button") Handcraft it
+    section#signup
+      div.container
+        h2 Get Our Handcrafted Newsletter
+        p.lead Seariously, we'll send you real paper in the mail. We don't do email.
+        div.row
+          div.col-sm-8.col-sm-offset-2
+            form
+              div.input-group
+                input.form-control.input-lg(type="text", placeholder="Put your real address in here...")
+                span.input-group-btn
+                  button.btn.btn-warning.btn-lg(type="button") Handcraft it
     // Sign Up end
 
 

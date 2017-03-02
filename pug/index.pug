@@ -96,7 +96,7 @@ html(lang="en")
 
     mixin team-member(source, alt, name)
       div.col-sm-3
-        img.img-circle(src=source, alt=alt)
+        img.img-circle(src="img/" + source, alt=alt)
         h4= name
         p Swag blue bottle disrupt vice aesthetic chia.
 
@@ -106,22 +106,10 @@ html(lang="en")
       div.container
         h2 Meet Our Team
         div.row
-          div.col-sm-3
-            img.img-circle(src="img/jane.jpg", alt="Woman's face")
-            h4 Jane Doe
-            p Swag blue bottle disrupt vice aesthetic chia.
-          div.col-sm-3
-            img.img-circle(src="img/john.jpg", alt="Man's face")
-            h4 John Doe
-            p Swag blue bottle disrupt vice aesthetic chia.
-          div.col-sm-3
-            img.img-circle(src="img/jenny.jpg", alt="Woman's face")
-            h4 Jenny Doe
-            p Swag blue bottle disrupt vice aesthetic chia.
-          div.col-sm-3
-            img.img-circle(src="img/jim.jpg", alt="Man's face")
-            h4 Jim Doe
-            p Swag blue bottle disrupt vice aesthetic chia.
+          +team-member("jane.jpg", "Woman's face", "Jane Doe")
+          +team-member("john.jpg", "Man's face", "John Doe")
+          +team-member("jenny.jpg", "Woman's face", "Jenny Doe")
+          +team-member("jim.jpg", "Man's face", "Jim Doe")
     // Team end
 
 

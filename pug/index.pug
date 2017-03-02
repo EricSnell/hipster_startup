@@ -94,7 +94,7 @@ html(lang="en")
               knausgaard poutine meggings vape four loko heirloom truffaut irony.
     // Wny Us end
 
-    mixin team-member(source, alt, name)
+    mixin team-member-card(source, alt, name)
       div.col-sm-3
         img.img-circle(src="img/" + source, alt=alt)
         h4= name
@@ -106,10 +106,10 @@ html(lang="en")
       div.container
         h2 Meet Our Team
         div.row
-          +team-member("jane.jpg", "Woman's face", "Jane Doe")
-          +team-member("john.jpg", "Man's face", "John Doe")
-          +team-member("jenny.jpg", "Woman's face", "Jenny Doe")
-          +team-member("jim.jpg", "Man's face", "Jim Doe")
+          +team-member-card("jane.jpg", "Woman's face", "Jane Doe")
+          +team-member-card("john.jpg", "Man's face", "John Doe")
+          +team-member-card("jenny.jpg", "Woman's face", "Jenny Doe")
+          +team-member-card("jim.jpg", "Man's face", "Jim Doe")
     // Team end
 
 
